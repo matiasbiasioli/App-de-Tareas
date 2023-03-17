@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Tareas</title>
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FontIcons -->
+  <script src="https://kit.fontawesome.com/94048fd23b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- APP Header -->
+  <div class="container">
+    <div class="app__header">
+      <div id="date"></div>
+      <h1>App de Tareas</h1>
+      <p>Hola Muzzo, te ayudaré a tomar nota de tus tareas</p>
+    </div>
+    <!-- INPUT TAREAS -->
+    <div class="agregar__tarea">
+      <input type="text" id="input" placeholder="Agrega una tarea">
+      <i id="plus" class="fa-solid fa-circle-plus"></i>
+    </div>
+    <!-- SECCION TAREAS -->
+    <div class="tus__tareas">
+      <h3>Aquí están tus tareas pendientes</h3>
+      <ul id="lista">
+        <!-- CONTENIDO DINÁMICO -->
+      </ul>
+    </div>
+
+
+
+
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

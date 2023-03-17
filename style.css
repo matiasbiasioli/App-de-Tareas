@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white:#ffffff; 
+    --purple: #9a67ea;
+    --blue-light: #04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #53df82;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--purple), var(--blue-light));
+    height: 100vh; 
+}
+
+.container {
+    width: 60vw;
+    margin: auto;
+}
+
+.app__header {
+    color: var(--white);
+    margin-top: 2rem;
+}
+.app__header h1 {
+    margin-bottom: 1rem;
+}
+
+/* SECCION AGREGADO DE TAREAS */
+.agregar__tarea {
+    background-color: var(--white);
+    padding: 10px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 1rem 0;
+    
+}
+.agregar__tarea input {
+    color: var(--purple);
+    padding: 10px;
+    border-radius: 15px;
+    border-color: var(--purple);
+}
+
+.agregar__tarea i {
+    color: var(--purple);
+    font-size: 2rem;
+}
+.agregar__tarea i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* SECCION TAREAS */
+.tus__tareas h3 {
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+.tus__tareas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, var(--blue-dark), var(--blue-light));
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin: .5rem 0;
+}
+
+.tus__tareas i {
+    font-size: 1.5rem;
+}
+.tus__tareas i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.line-through {
+    text-decoration: line-through;
+    color: var(--white);
+}
+
+/* VIsta desktop */
+ @media (min-width: 820px) {
+    .container {
+        width: 30vw;
+        margin: auto;
+    }
+ }
